@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Best Store a Ecommerce Online Shopping</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8/>
 <meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1><a href="/My_project/after_login.html">CHINGO<span>Stocks To Infinity</span></a></h1>
+					<h1 align="center"><a href="/My_project/after_login.html">CHINGO<span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">
@@ -167,39 +167,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</ul>
 							</li>
-							<!-- <li><a href="short-codes.html">Short Codes</a></li> -->
 							<li><a href="My_project/after_login/mail.html">Mail Us</a></li>
 						</ul>
 					</div>
 					</nav>
 				</div>
-				<div class="logo-nav-right">
-					<div class="search-box">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
-						</div>
-					</div>
-						<!-- search-scripts -->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-							<script>
-								new UISearch( document.getElementById( 'sb-search' ) );
-							</script>
-						<!-- //search-scripts -->
-				</div>
+				
 				<div class="header-right">
 					<div class="cart box_1">
-						<a href="checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-								<img src="images/bag.png" alt="" />
-							</h3>
+						<a href="/My_project/after_login/after_products/checkout.html">
+								<img src="../images/bag.png" alt="" />
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>	
 				</div>
@@ -212,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".1s">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				<li><a href="/My_project/after_login.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
 				<li class="active">Mail Us</li>
 			</ol>
 		</div>
@@ -236,14 +214,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form:errors path="subject" cssClass="error" />
 						<form:textarea type="text" path="message_matter"  placeholder="Message Matter" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="" />
 							<form:errors path="message_matter" cssClass="error" />
-						<!-- <textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea> -->
 						<input type="submit" value="Submit Now" >
 					</form:form>
 				</div>
 				<div class="col-md-4 mail-grid-right animated wow slideInRight" data-wow-delay=".1s">
 					<div class="mail-grid-right1">
-						<img src="../images/Me.png" alt=" " class="img-responsive" />
-						<h4>ACHINT CHAUHAN<span>Founder</span></h4>
+						<h4>ACHINT CHAUHAN<span>Founder</span></a></h4>
 						<ul class="phone-mail">
 							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +1234 567 893</li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="mailto:customer_support@chingo.com">customer_support@chingo.com</a></li>
@@ -258,7 +234,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=IET%20lucknow+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+	<iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=
+	en&amp;q=IET%20lucknow+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 		</div>
 	</div>
 <!-- //mail -->
@@ -333,7 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="footer-grid-sub-grids">
 						<div class="footer-grid-sub-grid-left">
-							<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+							<a href="single.html"><img src="../images/10.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="footer-grid-sub-grid-right">
 							<p>New Jewellery Arrivals</p>

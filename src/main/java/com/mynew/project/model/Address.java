@@ -1,10 +1,22 @@
 package com.mynew.project.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
+@Entity
+@Table(name="address")
 public class Address {
 
+	@Id
+	@GeneratedValue
+	private int id;
+	
 	@NotEmpty
 	@Email
 	private String email; 
@@ -21,7 +33,7 @@ public class Address {
 	@NotEmpty
 	private String city;
 	
-	@NotEmpty
+	@NotNull
 	private int pincode;
 	
 	@NotEmpty
@@ -30,6 +42,14 @@ public class Address {
 	@NotEmpty
 	private String country;
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -94,6 +114,4 @@ public class Address {
 		this.country = country;
 	}
 
-
-	
 }

@@ -11,46 +11,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-
-<style>
-.green {
-	font-weight: bold;
-	color: green;
-}
-
-.message {
-	margin-bottom: 10px;
-}
-
-</style>
-
-
 <title>Best Store a Ecommerce Online Shopping</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8/>
 <meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <!-- //js -->
 <!-- cart -->
-	<script src="js/simpleCart.min.js"> </script>
+	<script src="../js/simpleCart.min.js"> </script>
 <!-- cart -->
-<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
 <!-- for bootstrap working -->
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
+<link href="../css/animate.min.css" rel="stylesheet"> 
+<script src="../js/wow.min.js"></script>
 <script>
  new WOW().init();
 </script>
@@ -64,10 +50,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-grid">
 				<div class="header-grid-left animated wow slideInLeft" data-wow-delay=".1s">
 					<ul>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 <span>567</span> 892</li>
-						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="login.html">Login</a></li>
-						<li class="active"><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="register.html">Register</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="customer_support@chingo.com">customer_support@chingo.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 1234567890</li>
+						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i>Welcome ${email}</a></li>
+						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="/My_project/">Logout</a></li>
 					</ul>
 				</div>
 				<div class="header-grid-right animated wow slideInRight" data-wow-delay=".1s">
@@ -82,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1><a href="index.html">CHINGO<span>Stocks To Infinity</span></a></h1>
+					<h1 align="center"><a href="/My_project/after_login.html">CHINGO<span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">
@@ -97,42 +83,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>	
+							<li><a href="/My_project/after_login.html">Home</a></li>	
 							<!-- Mega Menu -->
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							 <li class="dropdown active">
+								<a href="#" class="dropdown-toggle act" data-toggle="dropdown">Products <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
+								
+								<c:url value="/after_login/after_products.html" var="url"/>
+								
 									<div class="row">
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Men's Wear</h6>
-												<li><a href="products.html">Clothing</a></li>
-												<li><a href="products.html">Wallets</a></li>
-												<li><a href="products.html">Shoes</a></li>
-												<li><a href="products.html">Watches</a></li>
-												<li><a href="products.html">Accessories</a></li>
+												<li><a href="${url}">Clothing</a></li>
+												<li><a href="${url}">Wallets</a></li>
+												<li><a href="${url}">Shoes</a></li>
+												<li><a href="${url}">Watches</a></li>
+												<li><a href="${url}">Accessories</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Women's Wear</h6>
-												<li><a href="products.html">Clothing</a></li>
-												<li><a href="products.html">Wallets,Bags</a></li>
-												<li><a href="products.html">Footwear</a></li>
-												<li><a href="products.html">Watches</a></li>
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="products.html">Jewellery</a></li>
-												<li><a href="products.html">Beauty & Grooming</a></li>
+												<li><a href="${url}">Clothing</a></li>
+												<li><a href="${url}">Wallets,Bags</a></li>
+												<li><a href="${url}">Footwear</a></li>
+												<li><a href="${url}">Watches</a></li>
+												<li><a href="${url}">Accessories</a></li>
+												<li><a href="${url}">Jewellery</a></li>
+												<li><a href="${url}">Beauty & Grooming</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Kid's Wear</h6>
-												<li><a href="products.html">Kids Home Fashion</a></li>
-												<li><a href="products.html">Boy's Clothing</a></li>
-												<li><a href="products.html">Girl's Clothing</a></li>
-												<li><a href="products.html">Shoes</a></li>
-												<li><a href="products.html">Brand Stores</a></li>
+												<li><a href="${url}">Kids Home Fashion</a></li>
+												<li><a href="${url}">Boy's Clothing</a></li>
+												<li><a href="${url}">Girl's Clothing</a></li>
+												<li><a href="${url}">Shoes</a></li>
+												<li><a href="${url}">Brand Stores</a></li>
 											</ul>
 										</div>
 										<div class="clearfix"></div>
@@ -142,74 +131,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Furniture <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
+								<c:url value="/after_login/after_furniture" var="url"/>
 									<div class="row">
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Home Collection</h6>
-												<li><a href="furniture.html">Cookware</a></li>
-												<li><a href="furniture.html">Sofas</a></li>
-												<li><a href="furniture.html">Dining Tables</a></li>
-												<li><a href="furniture.html">Shoe Racks</a></li>
-												<li><a href="furniture.html">Home Decor</a></li>
+												<li><a href="${url}">Cookware</a></li>
+												<li><a href="${url}">Sofas</a></li>
+												<li><a href="${url}">Dining Tables</a></li>
+												<li><a href="${url}">Shoe Racks</a></li>
+												<li><a href="${url}">Home Decor</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Office Collection</h6>
-												<li><a href="furniture.html">Carpets</a></li>
-												<li><a href="furniture.html">Tables</a></li>
-												<li><a href="furniture.html">Sofas</a></li>
-												<li><a href="furniture.html">Shoe Racks</a></li>
-												<li><a href="furniture.html">Sockets</a></li>
-												<li><a href="furniture.html">Electrical Machines</a></li>
+												<li><a href="${url}">Carpets</a></li>
+												<li><a href="${url}">Tables</a></li>
+												<li><a href="${url}">Sofas</a></li>
+												<li><a href="${url}">Shoe Racks</a></li>
+												<li><a href="${url}">Sockets</a></li>
+												<li><a href="${url}">Electrical Machines</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Decorations</h6>
-												<li><a href="furniture.html">Toys</a></li>
-												<li><a href="furniture.html">Wall Clock</a></li>
-												<li><a href="furniture.html">Lighting</a></li>
-												<li><a href="furniture.html">Top Brands</a></li>
+												<li><a href="${url}">Toys</a></li>
+												<li><a href="${url}">Wall Clock</a></li>
+												<li><a href="${url}">Lighting</a></li>
+												<li><a href="${url}">Top Brands</a></li>
 											</ul>
 										</div>
 										<div class="clearfix"></div>
 									</div>
 								</ul>
 							</li>
-							<li><a href="short-codes.html">Short Codes</a></li>
-							<li><a href="mail.html">Mail Us</a></li>
+							<li><a href="My_project/after_login/mail.html">Mail Us</a></li>
 						</ul>
 					</div>
 					</nav>
 				</div>
-				<div class="logo-nav-right">
-					<div class="search-box">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
-						</div>
-					</div>
-						<!-- search-scripts -->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-							<script>
-								new UISearch( document.getElementById( 'sb-search' ) );
-							</script>
-						<!-- //search-scripts -->
-				</div>
+				
 				<div class="header-right">
 					<div class="cart box_1">
-						<a href="checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-								<img src="images/bag.png" alt="" />
-							</h3>
+						<a href="/My_project/after_login/after_products/checkout.html">
+								<img src="../images/bag.png" alt="" />
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>	
 				</div>
@@ -222,58 +190,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".1s">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">Register Page</li>
+				<li><a href="/My_project/after_login.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				<li class="active">Address</li>
 			</ol>
 		</div>
 	</div>
 <!-- //breadcrumbs -->
-
-	<c:if test="${not empty message}">
-		<div class="message green">${message}</div>
-	</c:if>
-
-<!-- register -->
-	<div class="register">
+<!-- mail -->
+	<div class="mail animated wow zoomIn" data-wow-delay=".1s">
 		<div class="container">
-			<h3 class="animated wow zoomIn" data-wow-delay=".1s">Register Here</h3>
-			<p class="est animated wow zoomIn" data-wow-delay=".1s">Register yourself here.</p>
-			<div class="login-form-grids">
-				<h5 class="animated wow slideInUp" data-wow-delay=".1s">Profile Information</h5>
-				
-				<form:form method="post" modelAttribute="user" 
-							class="animated wow slideInUp" data-wow-delay=".1s">
+			<h3>Address</h3>
+			<p class="est">Enter your Address</p>
+			<div class="mail-grids">
+				<div class="col-md-8 mail-grid-left animated wow slideInLeft" data-wow-delay=".1s">
+					<form:form method="post" modelAttribute="address" class="animated wow slideInUp" data-wow-delay=".1s">
 							
-					<form:input type="text" path="first_name"  placeholder="First Name" />
-						<form:errors path="first_name" cssClass="error" />
-					<form:input type="text" path="last_name"  placeholder="Last Name" />
-						<form:errors path="last_name" cssClass="error" />
-				<!-- <div class="register-check-box animated wow slideInUp" data-wow-delay=".1s">
-					<div class="check">
-						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Subscribe to Newsletter</label>
-					</div> -->
-					
-				<h6 class="animated wow slideInUp" data-wow-delay=".1s">Login information</h6>
-					<form:input type="text" path="email" placeholder="Email Address" />
-						<form:errors path="email" cssClass="error" />
-					<form:input type="password" path="password" placeholder="Password" />
-						<form:errors path="password" cssClass="error" />
-					<!-- <input type="password" placeholder="Password Confirmation" name="password"> -->
-					<!-- <div class="register-check-box">
-						<div class="check">
-							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>I accept the terms and conditions</label>
-						</div>
-					</div -->
-					<input type="submit" value="Register">
-					</div>
-				</form:form>
-				
-			</div>
-			<div class="register-home animated wow slideInUp" data-wow-delay=".1s">
-				<a href="index.html">Home</a>
+						<form:input type="text" path="email"  placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="" />
+							<form:errors path="email" cssClass="error" />
+							
+						<form:input type="text" path="first_line"  placeholder="First Line" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First_Line';}" required="" />
+							<form:errors path="first_line" cssClass="error" />
+							
+							<form:input type="text" path="second_line"  placeholder="Second Line" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second_Line';}" required="" />
+							<form:errors path="second_line" cssClass="error" />
+							
+						<form:input type="text" path="landmark"  placeholder="Landmark" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Landmark';}" required="" />
+							<form:errors path="landmark" cssClass="error" />
+							
+						<form:input type="text" path="city"  placeholder="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" required="" />
+							<form:errors path="city" cssClass="error" />
+							
+						<form:input type="text" path="pincode"  placeholder="Pincode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pincode';}" required="" />
+							<form:errors path="pincode" cssClass="error" />
+							
+						<form:input type="text" path="state"  placeholder="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" required="" />
+							<form:errors path="state" cssClass="error" />
+									
+						<form:input type="text" path="country"  placeholder="Country" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Country';}" required="" />
+							<form:errors path="country" cssClass="error" />
+							
+						<input type="submit" value="Submit Now" >
+					</form:form>
+				</div>		
 			</div>
 		</div>
 	</div>
+	
+<!-- //mail -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -294,40 +257,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
 					<h3>Flickr Posts</h3>
 					<div class="footer-grid-left">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/13.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/14.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/15.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/16.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/16.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/13.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/14.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/15.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/16.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/16.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/13.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/14.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/15.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="footer-grid-left">
-						<img src="images/16.jpg" alt=" " class="img-responsive" />
+						<a href="single.html"><img src="../images/16.jpg" alt=" " class="img-responsive" /></a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -335,7 +298,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>Blog Posts</h3>
 					<div class="footer-grid-sub-grids">
 						<div class="footer-grid-sub-grid-left">
-							<img src="images/9.jpg" alt=" " class="img-responsive" />
+							<a href="single.html"><img src="../images/9.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="footer-grid-sub-grid-right">
 							<p>New Art Pieces Arrivals</p>
@@ -345,7 +308,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="footer-grid-sub-grids">
 						<div class="footer-grid-sub-grid-left">
-							<img src="images/10.jpg" alt=" " class="img-responsive" />
+							<a href="single.html"><img src="../images/10.jpg" alt=" " class="img-responsive" /></a>
 						</div>
 						<div class="footer-grid-sub-grid-right">
 							<p>New Jewellery Arrivals</p>
@@ -365,5 +328,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //footer -->
+
 </body>
 </html>

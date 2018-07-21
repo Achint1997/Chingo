@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+
+import com.mynew.project.model.Address;
 import com.mynew.project.model.Mail;
 import com.mynew.project.model.UserLogin;
+import com.mynew.project.service.AddressService;
 import com.mynew.project.service.MailService;
-
-
-/*<c:url value="/customer/registration" var="url"></c:url>*/
 
 @Controller
 @RequestMapping("/after_login")
@@ -23,6 +23,9 @@ public class After_LoginController
 {
 	@Autowired
 	MailService mailService;
+	
+	@Autowired
+	AddressService addressService;
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String after_login(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
@@ -61,11 +64,25 @@ public class After_LoginController
 		
 	}
 	
-	@RequestMapping(value="/checkout",method=RequestMethod.GET)
-	public String cart(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
+	@RequestMapping(value="/address",method=RequestMethod.GET)
+	public String address(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
 		model.addAttribute("email",userLogin.getEmail());	
-		System.out.println("in after_products/checkout "+userLogin.getEmail());
-				return "checkout";
+		System.out.println("in after_products/address "+userLogin.getEmail());
+		Address address=new Address();
+		model.addAttribute("address",address);
+		return "address";
+		
+	}
+	@RequestMapping(value="/address",method=RequestMethod.POST)
+	public String ubmit_address(@Valid@ModelAttribute("address") Address address,BindingResult result,Model model) {
+		if(result.hasErrors())
+			return "address";
+		else
+		{
+			addressService.save(address);
+			model.addAttribute("address_message", "Entered address succesfully");
+			return "redirect:../after_login.html";
+		}
 		
 	}
 	

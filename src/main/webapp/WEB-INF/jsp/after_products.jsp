@@ -69,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1><a href="/My_project/after_login.html">CHINGO <span>Stocks To Infinity</span></a></h1>
+					<h1 align="center"><a href="/My_project/after_login.html">CHINGO <span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">
@@ -168,13 +168,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</ul>
 							</li>
-							<!-- <li><a href="short-codes.html">Short Codes</a></li> -->
-							<li><a href="/mail.html">Mail Us</a></li>
+							<li><a href="/My_project/after_login/mail.html">Mail Us</a></li>
+							<li><a href="/My_project/after_login/address.html">${address_message}</a></li>
 						</ul>
 					</div>
 					</nav>
 				</div>
-				<div class="logo-nav-right">
+				<%-- <div class="logo-nav-right">
 					<div class="search-box">
 						<div id="sb-search" class="sb-search">
 							<form>
@@ -191,16 +191,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								new UISearch( document.getElementById( 'sb-search' ) );
 							</script>
 						<!-- //search-scripts -->
-				</div>
+				</div> --%>
 				<div class="header-right">
 					<div class="cart box_1">
 						<a href="/My_project/after_login/after_products/checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 								<img src="../images/bag.png" alt="" />
-							</h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>	
 				</div>
@@ -273,13 +269,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="new-products animated wow slideInUp" data-wow-delay=".1s">
 					<h3>New Products</h3>
+					<c:forEach var="list" items="${lists}" begin="9" end="11">
 					<div class="new-products-grids">
 						<div class="new-products-grid">
 							<div class="new-products-grid-left">
-								<a href="single.html"><img src="../images/6.jpg" alt=" " class="img-responsive" /></a>
+								<a href="single.html"><img src="/My_project/after_login/after_products/image/${list.product_id}" alt=" " class="img-responsive" /></a>
 							</div>
 							<div class="new-products-grid-right">
-								<h4><a href="single.html">Wall Hanging Lamp</a></h4>
+								<h4><a href="single.html">${list.product_brand}</a></h4>
 								<div class="rating">
 									<div class="rating-left">
 										<img src="../images/2.png" alt=" " class="img-responsive">
@@ -299,72 +296,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 								<div class="simpleCart_shelfItem new-products-grid-right-add-cart">
-									<p> <span class="item_price">$180</span><a class="item_add" href="#">add to cart </a></p>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="new-products-grid">
-							<div class="new-products-grid-left">
-								<a href="single.html"><img src="../images/26.jpg" alt=" " class="img-responsive" /></a>
-							</div>
-							<div class="new-products-grid-right">
-								<h4><a href="single.html">Blazer</a></h4>
-								<div class="rating">
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/1.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/1.png" alt=" " class="img-responsive">
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="simpleCart_shelfItem new-products-grid-right-add-cart">
-									<p> <span class="item_price">$250</span><a class="item_add" href="#">add to cart </a></p>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="new-products-grid">
-							<div class="new-products-grid-left">
-								<a href="single.html"><img src="../images/11.jpg" alt=" " class="img-responsive" /></a>
-							</div>
-							<div class="new-products-grid-right">
-								<h4><a href="single.html">Bangles</a></h4>
-								<div class="rating">
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/2.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/1.png" alt=" " class="img-responsive">
-									</div>
-									<div class="rating-left">
-										<img src="../images/1.png" alt=" " class="img-responsive">
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="simpleCart_shelfItem new-products-grid-right-add-cart">
-									<p> <span class="item_price">$259</span><a class="item_add" href="#">add to cart </a></p>
+									<p> <span class="item_price">$ ${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
 								</div>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
+					</c:forEach>
 				</div>
 				<div class="men-position animated wow slideInUp" data-wow-delay=".1s">
 					<a href="single.html"><img src="../images/27.jpg" alt=" " class="img-responsive" /></a>
@@ -419,7 +357,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><i>5000</i> <span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
+								<p><span class="item_price">$ ${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
 							</div>
 						</div>
 					</c:forEach>
@@ -441,7 +379,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><i>5000</i> <span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
+								<p><span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
 							</div>
 						</div>
 					</c:forEach>
@@ -461,7 +399,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><i>5000</i> <span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
+								<p><span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
 							</div>
 						</div>
 					</c:forEach>

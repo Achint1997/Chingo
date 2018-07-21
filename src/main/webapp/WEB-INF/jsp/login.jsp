@@ -70,7 +70,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1><a href="/My_project">Best Store <span>Shop anywhere</span></a></h1>
+					<h1><a href="/My_project">CHINGO<span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">
@@ -189,18 +189,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</script>
 						<!-- //search-scripts -->
 				</div>
-				<!-- <div class="header-right">
-					<div class="cart box_1">
-						<a href="checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-								<img src="images/bag.png" alt="" />
-							</h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>	
-				</div> -->
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -223,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="login">
 		<div class="container">
 			<h3 class="animated wow zoomIn" data-wow-delay=".1s">Login Form</h3>
-			<p class="est animated wow zoomIn" data-wow-delay=".1s">ultimateachint@gmail.com</p>
+			<p class="est animated wow zoomIn" data-wow-delay=".1s">Enter your Login details.</p>
 			<div class="login-form-grids animated wow slideInUp" data-wow-delay=".1s">
 			
 				<form:form  method="post" modelAttribute="userLogin">

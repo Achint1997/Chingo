@@ -166,7 +166,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</ul>
 							</li>
-							<!-- <li><a href="short-codes.html">Short Codes</a></li> -->
 							<li><a href="/My_project/after_login/mail.html">Mail Us</a></li>
 						</ul>
 					</div>
@@ -193,8 +192,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="header-right">
 					<div class="cart box_1">
 						<a href="/My_project/after_login/after_products/checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+						
+						<c:set var="count1" value="0" scope="page" />
+						<c:set var="sum1" value="0" scope="page" />
+					<c:forEach var="list" items="${carts}" >
+						<c:set var="count1" value="${count1 + 1}" scope="page"/>
+						<c:set var="sum1" value="${sum1 + list.product_price*list.product_number}" scope="page" />
+					</c:forEach>
+						<h3> <div class="total">
+								<span ></span>${sum1}  </span>(${count1} items)</span></div>
 								<img src="../../images/bag.png" alt="" />
 							</h3>
 						</a>
@@ -220,103 +226,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- checkout -->
 	<div class="checkout">
 		<div class="container">
-			<h3 class="animated wow slideInLeft" data-wow-delay=".1s">Your shopping cart contains: <span>3 Products</span></h3>
+			<h3 class="animated wow slideInLeft" data-wow-delay=".1s">Your shopping cart contains: <span></span></h3>
 			<div class="checkout-right animated wow slideInUp" data-wow-delay=".1s">
 				<table class="timetable_sub">
 					<thead>
 						<tr>
 							<th>SL No.</th>	
 							<th>Product</th>
-							<th>Quality</th>
+							<th>Quantity</th>
 							<th>Product Name</th>
 							<th>Price</th>
 							<th>Remove</th>
 						</tr>
 					</thead>
-					<tr class="rem1">
-						<td class="invert">1</td>
-						<td class="invert-image"><a href="single.html"><img src="../../images/22.jpg" alt=" " class="img-responsive" /></a></td>
+				<c:forEach var="list" items="${carts}" >
+					<tr class="rem${list.id}">
+						<td class="invert">${list.id}</td>
+						<td class="invert-image"><a href=""><img src="/My_project/after_login/after_products/checkout/image/${list.id}" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
 									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
+									<div class="entry value"><span>${list.product_number}</span></div>
 									<div class="entry value-plus active">&nbsp;</div>
 								</div>
 							</div>
 						</td>
-						<td class="invert">Black Shoe</td>
-						<td class="invert">$290.00</td>
+						<td class="invert">${list.product_name}</td>
+						<td class="invert">${list.product_price}</td>
 						<td class="invert">
 							<div class="rem">
 								<div class="close1"> </div>
 							</div>
 							<script>$(document).ready(function(c) {
 								$('.close1').on('click', function(c){
-									$('.rem1').fadeOut('slow', function(c){
-										$('.rem1').remove();
+									$('.rem').fadeOut('slow', function(c){
+										$('.rem').remove();
 									});
 									});	  
 								});
 						   </script>
 						</td>
 					</tr>
-					<tr class="rem2">
-						<td class="invert">2</td>
-						<td class="invert-image"><a href="single.html"><img src="../../images/30.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Centre Table</td>
-						<td class="invert">$250.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close2"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close2').on('click', function(c){
-									$('.rem2').fadeOut('slow', function(c){
-										$('.rem2').remove();
-									});
-									});	  
-								});
-						   </script>
-						</td>
-					</tr>
-					<tr class="rem3">
-						<td class="invert">3</td>
-						<td class="invert-image"><a href="single.html"><img src="../../images/11.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Stone Bangles</td>
-						<td class="invert">$299.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close3"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close3').on('click', function(c){
-									$('.rem3').fadeOut('slow', function(c){
-										$('.rem3').remove();
-									});
-									});	  
-								});
-						   </script>
-						</td>
-					</tr>
+					</c:forEach>
+					
 								<!--quantity-->
 									<script>
 									$('.value-plus').on('click', function(){
@@ -335,13 +288,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="checkout-left">	
 				<div class="checkout-left-basket animated wow slideInLeft" data-wow-delay=".1s">
 					<h4>Continue to Payment</h4>
+					<c:set var="count" value="0" scope="page" />
+					<c:set var="sum" value="0" scope="page" />
+					<c:forEach var="list" items="${carts}" >
+						<c:set var="count" value="${count + 1}" scope="page"/>
 					<ul>
-						<li>Product1 <i>-</i> <span>$250.00 </span></li>
-						<li>Product2 <i>-</i> <span>$290.00 </span></li>
-						<li>Product3 <i>-</i> <span>$299.00 </span></li>
-						<li>Total <i>-</i> <span>$854.00</span></li>
+						<li>Product  ${count}<i></i> <span>${list.product_price}</span></li>
+						<c:set var="sum" value="${sum + list.product_price*list.product_number}" scope="page" />
 					</ul>
+					</c:forEach>
+						<ul><li>Total<i></i> <span>${sum}</span></li></ul>
 				</div>
+				
 				<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".1s">
 					<a href="/My_project/after_login.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
 				</div>

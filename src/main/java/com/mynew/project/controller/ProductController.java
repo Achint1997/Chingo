@@ -20,7 +20,7 @@ import com.mynew.project.service.ProductService;
 @Controller
 @RequestMapping("/after_login/after_products")
 @SessionAttributes({"userLogin"})
-public class CartController {
+public class ProductController {
 
 	@Autowired
 	private ProductService productService;
@@ -37,23 +37,10 @@ public class CartController {
 		
 	}
 	
-	@RequestMapping(value="/checkout",method=RequestMethod.GET)
-	public String cart(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
-		model.addAttribute("email",userLogin.getEmail());	
-		System.out.println("in after_products/checkout "+userLogin.getEmail());
-				return "checkout";
-		
-	}
 	
 	@RequestMapping(value="/image/{product_id}",method=RequestMethod.GET)
 	public void getUserImage(HttpServletRequest request,HttpServletResponse response , @PathVariable("product_id") int productid) throws IOException{
-
-		 /*response.setContentType("image/jpeg");
-		  byte[] buffer = productService.getProductByID(productid).getImage();
-		  InputStream in1 = new ByteArrayInputStream(buffer);
-		  IOUtils.copy(in1, response.getOutputStream());  
-		 */ 
-		System.out.println(" image in controller");
+			System.out.println(" image in controller");
 		    Product prod=productService.getProductByID(productid);   
 		    System.out.println(" image "+prod.getProduct_name());
 		    response.setContentType("image/jpeg, image/jpg, image/png, image/gif");

@@ -64,7 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1><a href="index.html">Best Store <span>Shop anywhere</span></a></h1>
+					<h1><a href="index.html">CHINGO<span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">

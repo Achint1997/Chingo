@@ -163,7 +163,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</ul>
 							</li>
-							<!-- <li><a href="short-codes.html">Short Codes</a></li> -->
 							<li><a href="mail_me.html">Mail Us</a></li>
 						</ul>
 					</div>
@@ -187,18 +186,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</script>
 						<!-- //search-scripts -->
 				</div>
-				<!-- <div class="header-right">
-					<div class="cart box_1">
-						<a href="checkout.html">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-								<img src="images/bag.png" alt="" />
-							</h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>	
-				</div> -->
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -252,11 +239,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<figure class="effect-julia">
 							<img src="images/4.jpg" alt=" " class="img-responsive" />
 							<figcaption>
-								<h3>Best <span>Store</span><i> in online shopping</i></h3>
+								<h3><span>Chingo</span><i> Best Experience.</i></h3>
 								<div>
-									<p>Cupidatat non proident, sunt</p>
-									<p>Officia deserunt mollit anim</p>
-									<p>Laboris nisi ut aliquip consequat</p>
+									<p>Latest Collections</p>
+									<p>Best Deals</p>
+									<p>Best Price</p>
 								</div>
 							</figcaption>			
 						</figure>
@@ -285,11 +272,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="banner-bottom-grid-right animated wow slideInRight" data-wow-delay=".1s">
 					<div class="banner-bottom-grid-left-grid grid-left-grid1">
 						<div class="banner-bottom-grid-left-grid1">
-							<img src="images/41847567-guitar-music-concert-poster-layout-template.jpg" class="img-responsive">
+							<img src="images/11.jpg" class="img-responsive">
 							<!-- <img src="images/IMG_20180503_215143743.jpg" alt=" " class="img-responsive" /> -->
 						</div>
 						<div class="grid-left-grid1-pos">
-							<p>Top and classic designs <span>2018 Collection</span></p>
+							<p style="color:black">Top and classic designs <span>2018 Collection</span></p>
 						</div>
 					</div>
 				</div>
@@ -302,8 +289,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="new-collections">
 		<div class="container">
 			<h3 class="animated wow zoomIn" data-wow-delay=".1s">New Collections</h3>
-			<p class="est animated wow zoomIn" data-wow-delay=".1s">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-				deserunt mollit anim id est laborum.</p>
+			<p class="est animated wow zoomIn" data-wow-delay=".1s">At Chingo we offer you the best and the latest collections
+			 of exciting range of products.</p>
 			<div class="new-collections-grids">
 				<div class="col-md-3 new-collections-grid">
 					<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".1s">
@@ -333,10 +320,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<h4><a href="single.html">Formal Shirt</a></h4>
-						<p>Vel illum qui dolorem eum fugiat.</p>
+						<h4><a href="single.html">Peter England</a></h4>
+						<p>Blue Shirt</p>
 						<div class="new-collections-grid1-left simpleCart_shelfItem">
-							<p><i>$325</i> <span class="item_price">$250</span><a class="item_add" href="#">add to cart </a></p>
+							<p><i>$325</i> <span class="item_price">$250</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 						</div>
 					</div>
 					<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".1s">
@@ -366,10 +353,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<h4><a href="single.html">Running Shoes</a></h4>
-						<p>Vel illum qui dolorem eum fugiat.</p>
+						<h4><a href="single.html">Puma</a></h4>
+						<p>Blue Running Shoes</p>
 						<div class="new-collections-grid1-left simpleCart_shelfItem">
-							<p><i>$280</i> <span class="item_price">$150</span><a class="item_add" href="#">add to cart </a></p>
+							<p><i>$280</i> <span class="item_price">$150</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 						</div>
 					</div>
 				</div>
@@ -404,8 +391,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<p>New</p>
 							</div>
 						</div>
-						<h4><a href="single.html">Dining Table</a></h4>
-						<p>Vel illum qui dolorem eum fugiat.</p>
+						<h4><a href="single.html">Urban Ladder</a></h4>
+						<p>4 in 1 Dining Table</p>
 						<div class="new-collections-grid1-left simpleCart_shelfItem">
 							<p><i>$580</i> <span class="item_price">$550</span><a class="item_add" href="#">add to cart </a></p>
 						</div>
@@ -439,10 +426,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</div>
 								</div>
-								<h4><a href="single.html">Wall Lamp</a></h4>
-								<p>Vel illum qui dolorem eum fugiat.</p>
+								<h4><a href="single.html">Urban Ladder</a></h4>
+								<p>Wall Lamp</p>
 								<div class="new-collections-grid1-left simpleCart_shelfItem">
-									<p><i>$480</i> <span class="item_price">$400</span><a class="item_add" href="#">add to cart </a></p>
+									<p><i>$480</i> <span class="item_price">$400</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 								</div>
 							</div>
 						</div>
@@ -474,10 +461,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</div>
 								</div>
-								<h4><a href="single.html">Wall Lamp</a></h4>
-								<p>Vel illum qui dolorem eum fugiat.</p>
+								<h4><a href="single.html">Ajanta</a></h4>
+								<p>Wall Lamp</p>
 								<div class="new-collections-grid1-left simpleCart_shelfItem">
-									<p><i>$280</i> <span class="item_price">$150</span><a class="item_add" href="#">add to cart </a></p>
+									<p><i>$280</i> <span class="item_price">$150</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 								</div>
 							</div>
 						</div>
@@ -512,10 +499,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<h4><a href="single.html">Pearl & Stone Anklet</a></h4>
-						<p>Vel illum qui dolorem eum fugiat.</p>
+						<h4><a href="single.html">Tanishq</a></h4>
+						<p>Pearl & Stone Necklace</p>
 						<div class="new-collections-grid1-left simpleCart_shelfItem">
-							<p><i>$180</i> <span class="item_price">$120</span><a class="item_add" href="#">add to cart </a></p>
+							<p><i>$180</i> <span class="item_price">$120</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 						</div>
 					</div>
 					<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".1s">
@@ -545,10 +532,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						<h4><a href="single.html">Stones Bangles</a></h4>
-						<p>Vel illum qui dolorem eum fugiat.</p>
+						<h4><a href="single.html">Tanishq.</a></h4>
+						<p>Pearl & Stone Bangles.</p>
 						<div class="new-collections-grid1-left simpleCart_shelfItem">
-							<p><i>$340</i> <span class="item_price">$257</span><a class="item_add" href="#">add to cart </a></p>
+							<p><i>$340</i> <span class="item_price">$257</span><a class="item_add" href="/My_project/login.html">add to cart </a></p>
 						</div>
 					</div>
 				</div>
@@ -562,7 +549,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="timer-grids">
 				<div class="col-md-8 timer-grid-left animated wow slideInLeft" data-wow-delay=".1s">
-					<h3><a href="products.html">sunt in culpa qui officia deserunt mollit</a></h3>
+					<h3><a href="products.html">Latest Sale on Women Clothing.</a></h3>
 					<div class="rating">
 						<div class="rating-left">
 							<img src="images/2.png" alt=" " class="img-responsive" />
@@ -583,11 +570,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="new-collections-grid1-left simpleCart_shelfItem timer-grid-left-price">
 						<p><i>$580</i> <span class="item_price">$550</span></p>
-						<h4>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-							nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
-							qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui 
-							dolorem eum fugiat quo voluptas nulla pariatur.</h4>
-						<p><a class="item_add timer_add" href="#">add to cart </a></p>
+						<h4>Black Olega Off Shoulder Gown.</h4>
+						<p><a class="item_add timer_add" href="/My_project/login.html">add to cart </a></p>
 					</div>
 					<div id="counter"> </div>
 					<script src="js/jquery.countdown.js"></script>
