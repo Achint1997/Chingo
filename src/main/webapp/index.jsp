@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-grid">
 				<div class="header-grid-left animated wow slideInLeft" data-wow-delay=".1s">
 					<ul>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">@customer_support_chingo.com</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="/email_feedback">@customer_support_chingo.com</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 1234567890</li>
 						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="login.html">Login</a></li>
 						<li><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="register.html">Register</a></li>
@@ -168,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					</nav>
 				</div>
-				<div class="logo-nav-right">
+				<!-- <div class="logo-nav-right">
 					<div class="search-box">
 						<div id="sb-search" class="sb-search">
 							<form>
@@ -178,14 +178,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</form>
 						</div>
 					</div>
-						<!-- search-scripts -->
+						search-scripts
 						<script src="js/classie.js"></script>
 						<script src="js/uisearch.js"></script>
 							<script>
 								new UISearch( document.getElementById( 'sb-search' ) );
 							</script>
-						<!-- //search-scripts -->
-				</div>
+						//search-scripts
+				</div> -->
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -195,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="container">
 			<div class="banner-info animated wow zoomIn" data-wow-delay=".1s">
-				<h3>Free Online Shopping</h3>
+				<h3>Chingo Online Shopping</h3>
 				<h4>Up to <span>50% <i>Off/-</i></span></h4>
 				<div class="wmuSlider example1">
 					<div class="wmuSliderWrapper">
@@ -595,7 +595,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="collections-bottom-grids">
 				<div class="collections-bottom-grid animated wow slideInLeft" data-wow-delay=".1s">
-					<h3>45% Offer For <span>Women & Children's</span></h3>
+					<h3>45% Off or More <span>Women: Clothing & Accessories</span></h3>
 				</div>
 			</div>
 			<div class="newsletter animated wow slideInUp" data-wow-delay=".1s">

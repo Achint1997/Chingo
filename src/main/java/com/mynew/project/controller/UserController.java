@@ -22,6 +22,13 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String homepage()
+	{
+		return "index.html";
+	}
+	
+	
 	@RequestMapping(value="/register", method=RequestMethod.GET)
 	public String signup(Model model) {
 		System.out.println("In register Login Controller");
@@ -42,7 +49,7 @@ public class UserController {
 			return "register";
 		} else if(userService.findByUserName(user.getEmail())) {
 			System.out.println("2 "+user.getEmail());
-			model.addAttribute("message", "User Name exists. Try another user name");
+			model.addAttribute("message", "Email already exists.");
 			return "register";
 		} else {
 			userService.save(user);

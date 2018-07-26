@@ -13,6 +13,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Best Store a Ecommerce Online Shopping </title>
+<style>
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+</style>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -171,24 +198,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					</nav>
 				</div>
-				<div class="logo-nav-right">
-					<div class="search-box">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
-						</div>
-					</div>
-						<!-- search-scripts -->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-							<script>
-								new UISearch( document.getElementById( 'sb-search' ) );
-							</script>
-						<!-- //search-scripts -->
-				</div>
 				<div class="header-right">
 					<div class="cart box_1">
 						<a href="/My_project/after_login/after_products/checkout.html">
@@ -199,13 +208,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<c:set var="count1" value="${count1 + 1}" scope="page"/>
 						<c:set var="sum1" value="${sum1 + list.product_price*list.product_number}" scope="page" />
 					</c:forEach>
-						<h3> <div class="total">
-								<span ></span>${sum1}  </span>(${count1} items)</span></div>
+						<h3> 
+						<div class="total">
+								<span ></span>${sum1}  </span>(${count1} items)</span>
+						</div>
 								<img src="../../images/bag.png" alt="" />
-							</h3>
+						</h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
 					</div>	
 				</div>
 				<div class="clearfix"> </div>
@@ -240,49 +249,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</tr>
 					</thead>
 				<c:forEach var="list" items="${carts}" >
-					<tr class="rem${list.id}">
+					<tr>
 						<td class="invert">${list.id}</td>
 						<td class="invert-image"><a href=""><img src="/My_project/after_login/after_products/checkout/image/${list.id}" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
+									<a href="/My_project/after_login/after_products/checkout/update_delete_to_cart/${list.id}">
+									<div class="entry value-minus">
+									</div></a>
 									<div class="entry value"><span>${list.product_number}</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
+									<a href="/My_project/after_login/after_products/checkout/update_add_to_cart/${list.id}">
+									<div class="entry value-plus active">
+									</div></a>
 								</div>
 							</div>
 						</td>
 						<td class="invert">${list.product_name}</td>
 						<td class="invert">${list.product_price}</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close1"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close1').on('click', function(c){
-									$('.rem').fadeOut('slow', function(c){
-										$('.rem').remove();
-									});
-									});	  
-								});
-						   </script>
+						<form:form action=" " method="post">
+						<td>
+							 <a href="/My_project/after_login/after_products/checkout/delete_from_cart/${list.id}"/>Delete</a>
+							<!-- <input class="close" type="submit" value="sfsdf" /> -->
 						</td>
+						</form:form>
 					</tr>
-					</c:forEach>
-					
-								<!--quantity-->
-									<script>
-									$('.value-plus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
-										divUpd.text(newVal);
-									});
-
-									$('.value-minus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
-										if(newVal>=1) divUpd.text(newVal);
-									});
-									</script>
-								<!--quantity-->
+				</c:forEach>
 				</table>
 			</div>
 			<div class="checkout-left">	

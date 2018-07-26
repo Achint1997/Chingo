@@ -6,7 +6,16 @@ import com.mynew.project.model.Cart;
 
 public interface CartService {
 
-	public List<Cart> showcartproducts(String email);
+	List<Cart> showcartproducts(String email);
 	
-	public Cart getProductByID(int id);
+	Cart getProductByID(int id);
+
+	Cart save(Cart cart);
+
+	void delete(int id);
+
+	void update_delete(int id);
+
+	void update_add(int id);
+	
 }

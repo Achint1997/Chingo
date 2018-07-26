@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -15,10 +16,10 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class Cart {
 	
 	@Id
-	@GeneratedValue
+	@NotNull
 	private int id;
 	
-	@NotEmpty
+	@NotNull
 	private int product_number;
 	
 	@NotEmpty
@@ -28,7 +29,7 @@ public class Cart {
 	@Email
 	private String email;
 	
-	@NotEmpty
+	@NotNull
 	private int product_price;
 	
 	@Lob

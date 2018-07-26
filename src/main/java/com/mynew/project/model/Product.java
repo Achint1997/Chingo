@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -15,6 +16,7 @@ public class Product {
 	
 	@Id
 	@GeneratedValue
+	@NotNull
 	private int product_id;
 	
 	@NotEmpty
@@ -30,6 +32,9 @@ public class Product {
 	@NotEmpty
 	private String product_name;
 	
+	@NotNull
+	private int product_price;
+	
 	public byte[] getImage() {
 		return image;
 	}
@@ -38,9 +43,6 @@ public class Product {
 		this.image = image;
 	}
 
-	@NotEmpty
-	private int product_price;
-	
 	public int getProduct_id() {
 		return product_id;
 	}

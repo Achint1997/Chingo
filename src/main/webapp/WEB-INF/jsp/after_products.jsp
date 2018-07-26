@@ -13,6 +13,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Best Store a Ecommerce Online Shopping </title>
+<style>
+.myButton {
+	background-color:transparent;
+	border:2px solid  #D87140;
+	display:inline-block;
+	cursor:pointer;
+	color: #D87140;
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 25px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:black;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+</style>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -53,8 +76,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul>
 						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="customer_support@chingo.com">customer_support@chingo.com</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 1234567890</li>
-						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i>Hi ${email}</a></li>
-						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="/My_project/">Logout</a></li>
+						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="login.html">Login</a></li>
+						<li><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="register.html">Register</a></li>
 					</ul>
 				</div>
 				<div class="header-grid-right animated wow slideInRight" data-wow-delay=".1s">
@@ -69,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="logo-nav">
 				<div class="logo-nav-left animated wow zoomIn" data-wow-delay=".1s">
-					<h1 align="center"><a href="/My_project/after_login.html">CHINGO <span>Stocks To Infinity</span></a></h1>
+					<h1 align="center"><a href="/My_project/">CHINGO <span>Stocks To Infinity</span></a></h1>
 				</div>
 				<div class="logo-nav-left1">
 					<nav class="navbar navbar-default">
@@ -89,10 +112,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 <li class="dropdown active">
 								<a href="#" class="dropdown-toggle act" data-toggle="dropdown">Products <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
-								
-								<c:url value="/after_login/after_products.html" var="url"/>
-								
 									<div class="row">
+									<c:url value="/after_login/after_products.html" var="url"/>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
 												<h6>Men's Wear</h6>
@@ -132,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Furniture <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
-								<c:url value="/after_login/after_furniture" var="url"/>
+									<c:url value="/after_login/after_furniture" var="url"/>
 									<div class="row">
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
@@ -168,30 +189,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</ul>
 							</li>
+							<!-- <li><a href="short-codes.html">Short Codes</a></li> -->
 							<li><a href="/My_project/after_login/mail.html">Mail Us</a></li>
 							<li><a href="/My_project/after_login/address.html">${address_message}</a></li>
 						</ul>
 					</div>
 					</nav>
 				</div>
-				<%-- <div class="logo-nav-right">
-					<div class="search-box">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
-						</div>
-					</div>
-						<!-- search-scripts -->
-						<script src="../js/classie.js"></script>
-						<script src="../js/uisearch.js"></script>
-							<script>
-								new UISearch( document.getElementById( 'sb-search' ) );
-							</script>
-						<!-- //search-scripts -->
-				</div> --%>
 				<div class="header-right">
 					<div class="cart box_1">
 						<a href="/My_project/after_login/after_products/checkout.html">
@@ -240,7 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						});//]]>
 						</script>
-						<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+						<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 					 <!---->
 				</div>
 				<div class="categories animated wow slideInUp" data-wow-delay=".1s">
@@ -267,13 +271,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 					</ul>
 				</div>
-				<div class="new-products animated wow slideInUp" data-wow-delay=".1s">
+				 <div class="new-products animated wow slideInUp" data-wow-delay=".1s">
 					<h3>New Products</h3>
 					<c:forEach var="list" items="${lists}" begin="9" end="11">
 					<div class="new-products-grids">
 						<div class="new-products-grid">
 							<div class="new-products-grid-left">
-								<a href="single.html"><img src="/My_project/after_login/after_products/image/${list.product_id}" alt=" " class="img-responsive" /></a>
+								<a href="single.html"><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt=" " class="img-responsive" /></a>
 							</div>
 							<div class="new-products-grid-right">
 								<h4><a href="single.html">${list.product_brand}</a></h4>
@@ -295,15 +299,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="clearfix"> </div>
 								</div>
-								<div class="simpleCart_shelfItem new-products-grid-right-add-cart">
-									<p> <span class="item_price">$ ${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
-								</div>
+								<form:form modelAttribute="cart_new" action="/My_project/after_login/after_products/add_to_cart/${list.product_id}">
+  									<input type="submit" class="myButton" value="Add to Cart" >
+								</form:form>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
 					</c:forEach>
-				</div>
+				</div> 
 				<div class="men-position animated wow slideInUp" data-wow-delay=".1s">
 					<a href="single.html"><img src="../images/27.jpg" alt=" " class="img-responsive" /></a>
 					<div class="men-position-pos">
@@ -349,38 +353,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<c:forEach var="list" items="${lists}" begin="0" end="2">
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
-								<a href="single.html"><img src="/My_project/after_login/after_products/image/${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
+								<a href="single.html"><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
 								<div class="new-collections-grid1-image-pos products-right-grids-pos">
 									<a href="single.html">Quick View</a>
 								</div>
 							</div>
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
-							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><span class="item_price">$ ${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
+								<form:form modelAttribute="cart_new" action="/My_project/after_login/after_products/add_to_cart/${list.product_id}">
+  									<input type="submit" class="myButton" value="Add to Cart" >
+								</form:form>		
 							</div>
-						</div>
-					</c:forEach>
-					
-						</div>
-					
-					<!-- 2 products are left -->
-					
+						</c:forEach>
+					</div>
 					<div class="col-md-4 products-right-grids-bottom-grid">
 						
 						<c:forEach var="list" items="${lists}" begin="3" end="5">
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
-								<a href="single.html"><img src="/My_project/after_login/after_products/image/${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
+								<a href="single.html"><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
 								<div class="new-collections-grid1-image-pos products-right-grids-pos">
 									<a href="single.html">Quick View</a>
 								</div>
 							</div>
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
-							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
-							</div>
+							<form:form modelAttribute="cart_new" action="/My_project/after_login/after_products/add_to_cart/${list.product_id}">
+  						<input type="submit" class="myButton" value="Add to Cart" >
+					</form:form>
 						</div>
 					</c:forEach>
 				
@@ -391,16 +391,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<c:forEach var="list" items="${lists}" begin="6" end="8">
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
-								<a href="single.html"><img src="/My_project/after_login/after_products/image/${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
+								<a href="single.html"><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
 								<div class="new-collections-grid1-image-pos products-right-grids-pos">
 									<a href="single.html">Quick View</a>
 								</div>
 							</div>
 							<h4><a href="single.html">${list.product_brand}</a></h4>
 							<p>${list.product_model}</p><p>${list.product_name}</p>
-							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
-								<p><span class="item_price">${list.product_price}</span><a class="item_add" href="#">add to cart </a></p>
-							</div>
+								<form:form modelAttribute="cart_new" action="/My_project/after_login/after_products/add_to_cart/${list.product_id}">
+  						<input type="submit" class="myButton" value="Add to Cart" >
+					</form:form>
+							
 						</div>
 					</c:forEach>
 					
@@ -408,8 +409,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 					<div class="clearfix"> </div>
 				</div>
-				</div>
-				
 				<nav class="numbering animated wow slideInRight" data-wow-delay=".1s">
 				  <ul class="pagination paging">
 					<li>
@@ -432,7 +431,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+</div>
 <!-- //breadcrumbs -->
 <!-- footer -->
 	<div class="footer">
