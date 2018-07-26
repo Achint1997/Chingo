@@ -172,11 +172,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<c:url value="/after_login/mail.html" var="url_mail"/>
 							<li><a href="${url_mail}">Mail Us</a></li>
 							<c:choose>
-								<c:when test="${address_message=''}">
+								<c:when test="${not empty address_message}">
 									<li><a href="/My_project/after_login/address.html">Enter your Address</a></li>
 								</c:when>
 								<c:otherwise>
-									<li><a href="#">Address Entered</a></li>
+									<li><a href="#">Address is Entered</a></li>
 								</c:otherwise>
 							</c:choose>
 							<%-- <li><a href="/My_project/after_login/address.html">${address_message="" ? "Enter your Address" : "Address Entered"}</a></li> --%>
@@ -295,7 +295,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="collections-bottom-grids">
 				<div class="collections-bottom-grid animated wow slideInLeft" data-wow-delay=".1s">
-					<h3>45% Offer For <span>Women & Children's</span></h3>
+					<h3>45% Off or More<span>Women & Children: Clothing & Accessories</span></h3>
 				</div>
 			</div>
 			<div class="newsletter animated wow slideInUp" data-wow-delay=".1s">

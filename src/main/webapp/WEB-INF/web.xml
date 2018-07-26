@@ -12,20 +12,12 @@
 		<param-value>/WEB-INF/config/servletConfig.xml</param-value>
 	</init-param>
 </servlet>
-
-<!--  <servlet>
-	<description>
-	</description>
-	<display-name>After_LoginController</display-name>
-	<servlet-name>After_LoginController</servlet-name>
-	<servlet-class>com.mynew.project.controller.After_LoginController</servlet-class>
-</servlet> 
- -->
   
 <servlet-mapping>
 	<servlet-name>studentHibernateServlet</servlet-name>
-	<url-pattern>*.html</url-pattern>
 	<url-pattern>/</url-pattern>
+	<url-pattern>*.html</url-pattern>
+	 
 </servlet-mapping>
 
  <!--  <servlet-mapping>

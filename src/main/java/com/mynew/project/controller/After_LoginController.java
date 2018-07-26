@@ -31,7 +31,16 @@ public class After_LoginController
 	public String after_login(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
 		model.addAttribute("email",userLogin.getEmail());
 		System.out.println(" in after_login_controller "+userLogin.getEmail());
-				return "after_login";	
+		boolean found = addressService.findByEmail(userLogin.getEmail());
+		System.out.println(found);
+		if (found) {
+			System.out.println("entered");
+			/*model.addAttribute("address_message","Address Entered");*/
+		} else {				
+			System.out.println("enter");
+			model.addAttribute("address_message","Enter Address");
+		}
+		return "after_login";	
 	} 
 	
 	@RequestMapping(value="/after_furniture", method=RequestMethod.GET)
@@ -74,13 +83,13 @@ public class After_LoginController
 		
 	}
 	@RequestMapping(value="/address",method=RequestMethod.POST)
-	public String ubmit_address(@Valid@ModelAttribute("address") Address address,BindingResult result,Model model) {
+	public String submit_address(@Valid@ModelAttribute("address") Address address,BindingResult result,Model model) {
 		if(result.hasErrors())
 			return "address";
 		else
 		{
 			addressService.save(address);
-			model.addAttribute("address_message", "Entered address succesfully");
+			model.addAttribute("address_mes", "Entered address succesfully");
 			return "redirect:../after_login.html";
 		}
 		

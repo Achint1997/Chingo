@@ -33,9 +33,15 @@ public class CartController {
 		System.out.println("in after_products/checkout "+userLogin.getEmail());
 		List<Cart> cart=new ArrayList<Cart>();
 		cart=cartService.showcartproducts(userLogin.getEmail());
-		System.out.println(cart.get(1));
-		model.addAttribute("carts",cart);
-		return "checkout";
+		if(cart==null)
+		{
+			return "checkout";
+		}
+		else
+		{
+			model.addAttribute("carts",cart);
+			return "checkout";
+		}
 		
 	}
 	

@@ -14,5 +14,14 @@ public class AddressServiceImpl implements AddressService {
 	public Address save(Address address) {
 		return addressRepository.save(address);
 	}
+
+	public boolean findByEmail(String email) {
+		
+		Address ad=addressRepository.findByEmail(email);
+		if(ad!=null)
+			return true;
+		else 
+			return false;
+	}
 	
 }

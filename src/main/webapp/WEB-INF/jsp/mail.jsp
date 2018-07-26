@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-grid">
 				<div class="header-grid-left animated wow slideInLeft" data-wow-delay=".1s">
 					<ul>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="customer_support@chingo.com">customer_support@chingo.com</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="/email_feedback">customer_support@chingo.com</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 1234567890</li>
 						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i>Welcome ${email}</a></li>
 						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="/My_project/">Logout</a></li>
@@ -217,12 +217,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit" value="Submit Now" >
 					</form:form>
 				</div>
-				<div class="col-md-4 mail-grid-right animated wow slideInRight" data-wow-delay=".1s">
+				<div class="col-md-2 mail-grid-right animated wow slideInRight" data-wow-delay=".1s">
 					<div class="mail-grid-right1">
+						<img src="../images/Me.png" alt=" " class="img-responsive" />
 						<h4>ACHINT CHAUHAN<span>Founder</span></a></h4>
 						<ul class="phone-mail">
 							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +1234 567 893</li>
-							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="mailto:customer_support@chingo.com">customer_support@chingo.com</a></li>
 						</ul>
 						<ul class="social-icons">
 							<li><a href="#" class="facebook"></a></li>
@@ -232,6 +232,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 				</div>
+				<div class="col-md-2  mail-grid-right" data-wow-delay=".1s">
+					<div class="mail-grid-right1">
+						<img src="../images/Govind.png" alt=" " class="img-responsive" />
+						<h4>GOVIND GUPTA<span>Founder</span></a></h4>
+						<ul class="phone-mail">
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +1234 567 893</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="twitter"></a></li>
+							<li><a href="#" class="g"></a></li>
+							<li><a href="#" class="instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+				
 				<div class="clearfix"> </div>
 			</div>
 	<iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=

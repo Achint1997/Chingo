@@ -23,4 +23,6 @@
 	<property name="basename" value="messages" />
 </bean>
 
+<mvc:resources mapping="/images/**" location="/images/"
+    cache-period="31556926"/>
 </beans>
