@@ -244,7 +244,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href=""><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
 							</div>
 							<div class="new-products-grid-right">
+<<<<<<< HEAD
 								<h4><a href="">Urban Ladder Wall Lamp</a></h4>
+=======
+								<h4><a href="single.html">Urban Ladder Wall Lamp</a></h4>
+>>>>>>> refs/remotes/origin/master
 								<div class="rating">
 									<div class="rating-left">
 										<img src="images/2.png" alt=" " class="img-responsive">
@@ -274,7 +278,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href=""><img src="images/9.jpg" alt=" " class="img-responsive" /></a>
 							</div>
 							<div class="new-products-grid-right">
+<<<<<<< HEAD
 								<h4><a href="">Imporio Wall Lamp</a></h4>
+=======
+								<h4><a href="single.html">Imporio Wall Lamp</a></h4>
+>>>>>>> refs/remotes/origin/master
 								<div class="rating">
 									<div class="rating-left">
 										<img src="images/2.png" alt=" " class="img-responsive">
@@ -366,7 +374,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Eros Centre Table</a></h4>
+=======
+							<h4><a href="single.html">Eros Centre Table</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Teakwood Brown</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$325</i> <span class="item_price">$250</span><a class="item_add" href="#">add to cart </a></p>
@@ -399,7 +411,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Imporio Media Cabinet</a></h4>
+=======
+							<h4><a href="single.html">Imporio Media Cabinet</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Engineered with Sound</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$325</i> <span class="item_price">$250</span><a class="item_add" href="#">add to cart </a></p>
@@ -432,7 +448,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Urban Ladder Entertainment Unit</a></h4>
+=======
+							<h4><a href="single.html">Urban Ladder Entertainment Unit</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Engineered Wood TV Unit</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$585</i> <span class="item_price">$489</span><a class="item_add" href="#">add to cart </a></p>
@@ -467,7 +487,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Eros Two-Seater Sofa</a></h4>
+=======
+							<h4><a href="single.html">Eros Two-Seater Sofa</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Imported Paris Foam cushions</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$280</i> <span class="item_price">$250</span><a class="item_add" href="#">add to cart </a></p>
@@ -500,7 +524,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Imporio Wall Lamp</a></h4>
+=======
+							<h4><a href="single.html">Imporio Wall Lamp</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Classy Antique Piece</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$500</i> <span class="item_price">$480</span><a class="item_add" href="#">add to cart </a></p>
@@ -533,7 +561,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</div>
+<<<<<<< HEAD
 							<h4><a href="">Imporio Wall Lamp</a></h4>
+=======
+							<h4><a href="single.html">Imporio Wall Lamp</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Pearl Golden</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$585</i> <span class="item_price">$489</span><a class="item_add" href="#">add to cart </a></p>
@@ -545,6 +577,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
+<<<<<<< HEAD
 								<a href="" class="product-image"><img src="images/34.jpg" alt=" " class="img-responsive"></a>
 								<div class="new-collections-grid1-image-pos products-right-grids-pos">
 									<a href="">Quick View</a>
@@ -571,6 +604,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							<h4><a href="">Ajanta  Wall Clock</a></h4>
+=======
+								<a href="single.html" class="product-image"><img src="images/34.jpg" alt=" " class="img-responsive"></a>
+								<div class="new-collections-grid1-image-pos products-right-grids-pos">
+									<a href="single.html">Quick View</a>
+								</div>
+								<div class="new-collections-grid1-right products-right-grids-pos-right">
+									<div class="rating">
+										<div class="rating-left">
+											<img src="images/2.png" alt=" " class="img-responsive">
+										</div>
+										<div class="rating-left">
+											<img src="images/2.png" alt=" " class="img-responsive">
+										</div>
+										<div class="rating-left">
+											<img src="images/2.png" alt=" " class="img-responsive">
+										</div>
+										<div class="rating-left">
+											<img src="images/1.png" alt=" " class="img-responsive">
+										</div>
+										<div class="rating-left">
+											<img src="images/1.png" alt=" " class="img-responsive">
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</div>
+							<h4><a href="single.html">Ajanta  Wall Clock</a></h4>
+>>>>>>> refs/remotes/origin/master
 							<p>Analog wooden clock</p>
 							<div class="simpleCart_shelfItem products-right-grid1-add-cart">
 								<p><i>$585</i> <span class="item_price">$489</span><a class="item_add" href="#">add to cart </a></p>

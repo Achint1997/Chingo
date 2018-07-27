@@ -595,7 +595,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="collections-bottom-grids">
 				<div class="collections-bottom-grid animated wow slideInLeft" data-wow-delay=".1s">
+<<<<<<< HEAD
 					<h3>45% Off or More <span>Women: Clothing & Accessories</span></h3>
+=======
+					<h3>45% Off or More<span>Women: Clothing & Accessories</span></h3>
+>>>>>>> refs/remotes/origin/master
 				</div>
 			</div>
 			<div class="newsletter animated wow slideInUp" data-wow-delay=".1s">

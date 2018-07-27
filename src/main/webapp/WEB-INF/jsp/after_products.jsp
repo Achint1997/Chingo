@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	border:2px solid  #D87140;
 	display:inline-block;
 	cursor:pointer;
-	color: #D87140;
+	color: #D87140;	
 	font-family:Times New Roman;
 	font-size:15px;
 	font-weight:bold;
