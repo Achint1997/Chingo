@@ -7,7 +7,6 @@ public interface ProductService {
 
 	public List<Product> showproducts();
 	
-	
 	public Product getProductByID(int productid);
 	
 }

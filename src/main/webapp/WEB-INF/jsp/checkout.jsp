@@ -269,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<td class="invert">${list.product_price}</td>
 						<form:form action=" " method="post">
 						<td>
-							 <a href="/My_project/after_login/after_products/checkout/delete_from_cart/${list.id}"/>Delete</a>
+						<a href="/My_project/after_login/after_products/checkout/delete_from_cart/${list.id}"/>Delete</a>
 							<!-- <input class="close" type="submit" value="sfsdf" /> -->
 						</td>
 						</form:form>

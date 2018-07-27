@@ -10,7 +10,6 @@ import com.mynew.project.repository.ProductRepository;
 @Service("productService")
 public class ProductServiceImpl implements ProductService {
 
-	
 	@Autowired
 	private ProductRepository productRepository;
 	

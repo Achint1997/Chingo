@@ -33,8 +33,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	position:relative;
 	top:1px;
 }
-
-
 </style>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
