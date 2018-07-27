@@ -27,8 +27,7 @@ public interface CartRepository extends JpaRepository<Cart, Long>{
 	@Transactional
 	@Query(value="update Cart s set s.product_number=LAST_INSERT_ID(s.product_number-1) where s.id=:id", nativeQuery = true)
 	void update_delete(@Param("id") int id);
-	
-//update Cart s set s.product_number=:s.product_number-1 where s.id=:id
+
 	@Modifying(clearAutomatically = true)
 	@Transactional
 	@Query(value="update Cart s set s.product_number=LAST_INSERT_ID(s.product_number+1) where s.id=:id", nativeQuery = true)

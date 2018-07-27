@@ -73,7 +73,6 @@ public class ProductController {
 			System.out.println("Saved");
 			return "redirect:/after_login/after_products.html";
 		}
-		
 	}
 	
 }

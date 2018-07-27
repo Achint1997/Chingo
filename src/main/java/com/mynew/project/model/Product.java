@@ -35,6 +35,7 @@ public class Product {
 	@NotNull
 	private int product_price;
 	
+	
 	public byte[] getImage() {
 		return image;
 	}

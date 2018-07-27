@@ -69,7 +69,6 @@ public class CartController {
 			System.out.println("Deleted");
 			return "redirect:/after_login/after_products/checkout.html";
 		}
-		
 	}
 	
 	@RequestMapping(value="/update_delete_to_cart/{id}")
@@ -83,7 +82,6 @@ public class CartController {
 			System.out.println("Decreased");
 			return "redirect:/after_login/after_products/checkout.html";
 		}
-		
 	}
 	
 	@RequestMapping(value="/update_add_to_cart/{id}")
@@ -97,6 +95,5 @@ public class CartController {
 			System.out.println("Increased");
 			return "redirect:/after_login/after_products/checkout.html";
 		}
-		
 	}
 }
