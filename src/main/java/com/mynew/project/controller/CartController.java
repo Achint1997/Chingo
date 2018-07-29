@@ -79,9 +79,19 @@ public class CartController {
 			return "";
 		} 
 		else {
+			if(cartService.getProductByID(id).getProduct_number()==1)
+			{
+				System.out.println(cartService.getProductByID(id).getProduct_number());
+				cartService.delete(id);
+				System.out.println("Deleted");
+				return "redirect:/after_login/after_products/checkout.html";
+			}
+			else
+			{
 			cartService.update_delete(id);
 			System.out.println("Decreased");
 			return "redirect:/after_login/after_products/checkout.html";
+			}
 		}
 		
 	}

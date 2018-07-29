@@ -17,15 +17,26 @@ import com.mynew.project.model.Product;
 import com.mynew.project.service.ProductService;
 
 @Controller
-@RequestMapping("/after_login/after_products")
+@RequestMapping("/after_login")
 @SessionAttributes({"userLogin"})
 public class ImageController {
 
 	@Autowired
 	private ProductService productService;
 	
-	@RequestMapping(value="/image",method=RequestMethod.GET)
-	public void getUserImage(HttpServletRequest request,HttpServletResponse response ,@RequestParam("product_id") Integer productid) throws IOException{
+	@RequestMapping(value="/after_products/image",method=RequestMethod.GET)
+	public void getProductImage(HttpServletRequest request,HttpServletResponse response ,@RequestParam("product_id") Integer productid) throws IOException{
+			//System.out.println(" image in controller");
+		    Product prod=productService.getProductByID(productid);   
+		   // System.out.println(" image "+prod.getProduct_name());
+		    response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
+		    response.getOutputStream().write(prod.getImage());
+		    response.getOutputStream().close();
+		    
+		}
+	
+	@RequestMapping(value="/after_furniture/image",method=RequestMethod.GET)
+	public void getFurnitureImage(HttpServletRequest request,HttpServletResponse response ,@RequestParam("product_id") Integer productid) throws IOException{
 			//System.out.println(" image in controller");
 		    Product prod=productService.getProductByID(productid);   
 		   // System.out.println(" image "+prod.getProduct_name());

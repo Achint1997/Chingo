@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chingo a E commerce Online Shopping </title>
+<title>Chingo a E commerce Online Shopping</title>
 <style>
 .myButton {
 	background-color:transparent;
@@ -205,7 +205,7 @@
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".1s">
 				<li><a href="/My_project/after_login.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">Products</li>
+				<li class="active">Furniture</li>
 			</ol>
 		</div>
 	</div>
@@ -241,30 +241,30 @@
 				<div class="categories animated wow slideInUp" data-wow-delay=".1s">
 					<h3>Categories</h3>
 					<ul class="cate">
-						<li><a href="/My_project/after_login/after_products.html">Best Selling</a> <span>(15)</span></li>
-						<li><a href="/My_project/after_login/after_products.html">Man</a> <span>(16)</span></li>
+						<li><a href="/My_project/after_login/after_furniture.html">Best Selling</a> <span>(15)</span></li>
+						<li><a href="/My_project/after_login/after_furniture.html">Man</a> <span>(16)</span></li>
 							<ul>
-								<li><a href="/My_project/after_login/after_products.html">Accessories</a> <span>(2)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Coats & Jackets</a> <span>(5)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Jeans</a> <span>(1)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">New Arrivals</a> <span>(0)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Suits</a> <span>(1)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Casual Shirts</a> <span>(0)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Accessories</a> <span>(2)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Coats & Jackets</a> <span>(5)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Jeans</a> <span>(1)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">New Arrivals</a> <span>(0)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Suits</a> <span>(1)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Casual Shirts</a> <span>(0)</span></li>
 							</ul>
-						<li><a href="/My_project/after_login/after_products.html">Sales</a> <span>(15)</span></li>
-						<li><a href="/My_project/after_login/after_products.html">Woman</a> <span>(15)</span></li>
+						<li><a href="/My_project/after_login/after_furniture.html">Sales</a> <span>(15)</span></li>
+						<li><a href="/My_project/after_login/after_furniture.html">Woman</a> <span>(15)</span></li>
 							<ul>
-								<li><a href="/My_project/after_login/after_products.html">Accessories</a> <span>(2)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">New Arrivals</a> <span>(0)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Dresses</a> <span>(1)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Casual Shirts</a> <span>(0)</span></li>
-								<li><a href="/My_project/after_login/after_products.html">Shorts</a> <span>(4)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Accessories</a> <span>(2)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">New Arrivals</a> <span>(0)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Dresses</a> <span>(1)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Casual Shirts</a> <span>(0)</span></li>
+								<li><a href="/My_project/after_login/after_furniture.html">Shorts</a> <span>(4)</span></li>
 							</ul>
 					</ul>
 				</div>
 				 <div class="new-products animated wow slideInUp" data-wow-delay=".1s">
 					<h3>New Products</h3>
-					<c:forEach var="list" items="${lists}" begin="9" end="11">
+					<c:forEach var="list" items="${lists}" begin="11" end="12">
 					<div class="new-products-grids">
 						<div class="new-products-grid">
 							<div class="new-products-grid-left">
@@ -302,8 +302,8 @@
 				<div class="men-position animated wow slideInUp" data-wow-delay=".1s">
 					<a href=""><img src="../images/27.jpg" alt=" " class="img-responsive" /></a>
 					<div class="men-position-pos">
-						<h4>Summer collection</h4>
-						<h5><span>55%</span> Flat Discount</h5>
+						<h4>Exotic Furniture Collection</h4>
+						<h5><span>25%</span> Flat Discount</h5>
 					</div>
 				</div>
 			</div>
@@ -321,15 +321,13 @@
 						<div class="sorting-left">
 							<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
 								<option value="null">Item on page 1</option>
-								<option value="null">Item on page 2</option> 
-								<option value="null">Item on page 3</option>					
 								<option value="null">All</option>								
 							</select>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="products-right-grids-position animated wow slideInRight" data-wow-delay=".1s">
-						<img src="../images/18.jpg" alt=" " class="img-responsive" />
+						<img src="../images/28.jpg" alt=" " class="img-responsive" />
 						<div class="products-right-grids-position1">
 							<h4>2018 New Collection</h4>
 							<p>Welcome to the best collection of apparels,accessories and new arrivals.</p>
@@ -341,7 +339,7 @@
 				<div class="products-right-grids-bottom">
 					<div class="col-md-4 products-right-grids-bottom-grid">
 					
-					<c:forEach var="list" items="${lists}" begin="0" end="2">
+					<c:forEach var="list" items="${lists}" begin="13" end="15">
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
 								<a href=""><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
@@ -359,7 +357,7 @@
 					</div>
 					<div class="col-md-4 products-right-grids-bottom-grid">
 						
-						<c:forEach var="list" items="${lists}" begin="3" end="5">
+						<c:forEach var="list" items="${lists}" begin="16" end="18">
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
 								<a href=""><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>
@@ -379,7 +377,7 @@
 					
 					<div class="col-md-4 products-right-grids-bottom-grid">
 						
-						<c:forEach var="list" items="${lists}" begin="6" end="8">
+						<c:forEach var="list" items="${lists}" begin="19" >
 							<div class="new-collections-grid1 products-right-grid1 animated wow slideInUp" data-wow-delay=".1s">
 							<div class="new-collections-grid1-image">
 								<a href=""><img src="/My_project/after_login/after_products/image?product_id=${list.product_id}" alt="Can't be fetched " class="img-responsive"></a>

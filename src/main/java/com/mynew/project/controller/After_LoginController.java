@@ -43,12 +43,7 @@ public class After_LoginController
 		return "after_login";	
 	} 
 	
-	@RequestMapping(value="/after_furniture", method=RequestMethod.GET)
-	public String after_furniture(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
-		model.addAttribute("email",userLogin.getEmail());
-		System.out.println("in after_furniture "+userLogin.getEmail());
-		return "furniture";
-	}
+	
 	@RequestMapping(value="/mail", method=RequestMethod.GET)
 	public String after_mail(@ModelAttribute("userLogin") UserLogin userLogin,Model model) {
 		Mail mail = new Mail();		
